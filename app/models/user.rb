@@ -15,5 +15,4 @@ class User < ApplicationRecord
                     format: { with: URI::MailTo::EMAIL_REGEXP }
 
  validates :password, length: { minimum: 6, maximum: 30 }, if: :password_digest_changed?
-
 end

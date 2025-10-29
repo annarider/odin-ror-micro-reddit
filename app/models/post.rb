@@ -11,7 +11,7 @@ class Post < ApplicationRecord
 
   def link_or_body_present
     if link.blank? && body.blank?
-      errors.add(:base, 'Post must have either a valid link or body text')
+      errors.add(:base, "Post must have either a valid link or body text")
     end
   end
 end
